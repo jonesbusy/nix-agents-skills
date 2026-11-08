@@ -30,6 +30,7 @@ The module defines the skill sources and selection in one place. Home Manager li
 With Nix flakes and `prek` installed, run:
 
 ```sh
+nix fmt -- --ci
 nix eval --impure --file tests/skills.nix
 nix flake check --no-build
 prek run --all-files

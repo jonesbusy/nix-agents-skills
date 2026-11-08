@@ -15,6 +15,7 @@ Do not invoke or follow Superpowers workflows or skills for work in this reposit
 Stage new and modified files before evaluating the flake; Nix reads Git checkout sources from tracked files. Run:
 
 ```sh
+nix fmt -- --ci
 nix eval --impure --file tests/skills.nix
 nix flake check --no-build
 prek run --all-files

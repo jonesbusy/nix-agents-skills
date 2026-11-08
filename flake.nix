@@ -86,6 +86,8 @@
       };
     in
     {
+      formatter.${system} = pkgs.nixfmt-tree;
+
       homeManagerModules.default = skillsModule;
       checks.${system}.home-manager-module =
         assert homeManagerConfig.config.programs.agent-skills.enable;
