@@ -7,6 +7,7 @@
   awesome-copilot,
   jbang-agent-skills,
   softaworks-agent-toolkit,
+  cloudflare-security-audit-skill,
 }:
 { ... }:
 let
@@ -99,6 +100,10 @@ in
       path = builtins.toPath "${softaworks-agent-toolkit}";
       subdir = "skills";
     };
+    sources.cloudflare-security-audit-skill = {
+      path = builtins.toPath "${cloudflare-security-audit-skill}";
+      subdir = "skills";
+    };
     skills.enableAll = [ "jbang-agent-skills" ];
     skills.explicit =
       awsExplicitSkills
@@ -128,6 +133,10 @@ in
         "quarkus-update" = {
           from = "quarkus";
           path = "quarkus-update";
+        };
+        "security-audit" = {
+          from = "cloudflare-security-audit-skill";
+          path = "security-audit";
         };
       };
     targets.agents = {

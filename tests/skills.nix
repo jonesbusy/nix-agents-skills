@@ -40,6 +40,10 @@ assert builtins.pathExists (config.sources.jbang-agent-skills.path + "/jbang/SKI
 assert builtins.pathExists (config.sources.jbang-agent-skills.path + "/jbang-scripting/SKILL.md");
 assert skills."gh-fix-ci".from == "openai";
 assert skills."quarkus-update".from == "quarkus";
+assert skills."security-audit".from == "cloudflare-security-audit-skill";
+assert builtins.pathExists (
+  config.sources.cloudflare-security-audit-skill.path + "/skills/security-audit/SKILL.md"
+);
 assert config.targets.agents.enable;
 assert config.targets.agents.structure == "symlink-tree";
 assert builtins.length module.imports == 1;

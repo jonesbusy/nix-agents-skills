@@ -43,6 +43,11 @@
       url = "github:softaworks/agent-toolkit";
       flake = false;
     };
+
+    cloudflare-security-audit-skill = {
+      url = "github:cloudflare/security-audit-skill";
+      flake = false;
+    };
   };
 
   outputs =
@@ -56,6 +61,7 @@
       awesome-copilot,
       jbang-agent-skills,
       softaworks-agent-toolkit,
+      cloudflare-security-audit-skill,
       ...
     }:
     let
@@ -71,6 +77,7 @@
           awesome-copilot
           jbang-agent-skills
           softaworks-agent-toolkit
+          cloudflare-security-audit-skill
           ;
       };
       homeManagerConfig = home-manager.lib.homeManagerConfiguration {
