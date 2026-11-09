@@ -23,11 +23,11 @@
     "awesome-copilot": {
       "flake": false,
       "locked": {
-        "lastModified": 1793972433,
-        "narHash": "sha256-NzGLIkz7u85m1nMydq/uFAiNcnFw2DRr+jgHM33ncHc=",
+        "lastModified": 1794193096,
+        "narHash": "sha256-zknIoYpQTW7eK6L+S7uU2tSsBlOn1CMx3h5KNui5TF8=",
         "owner": "github",
         "repo": "awesome-copilot",
-        "rev": "797337f33f73e35d08d82f840e21c4b8c4932d88",
+        "rev": "00cc51d04f49148fc5681c58b944703095b2715f",
         "type": "github"
       },
       "original": {
@@ -39,11 +39,11 @@
     "aws-agent-toolkit": {
       "flake": false,
       "locked": {
-        "lastModified": 1793997249,
-        "narHash": "sha256-nDiwRRH0nOunUHYsA7SsOmcI/LZdUw+7MwYvNKMBUxM=",
+        "lastModified": 1794179440,
+        "narHash": "sha256-eI4QDoOTLleuf9I9lpjw68r2dLFcfByckodmpy//O6Y=",
         "owner": "aws",
         "repo": "agent-toolkit-for-aws",
-        "rev": "0a218f8cc13220013f72147e2e0fdbe350b34ae2",
+        "rev": "e1380e15b6b91f7c7a4e20e9357bd77828e32037",
         "type": "github"
       },
       "original": {
