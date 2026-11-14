@@ -8,6 +8,7 @@
   jbang-agent-skills,
   softaworks-agent-toolkit,
   cloudflare-security-audit-skill,
+  caveman,
 }:
 { ... }:
 let
@@ -104,6 +105,10 @@ in
       path = builtins.toPath "${cloudflare-security-audit-skill}";
       subdir = "skills";
     };
+    sources.caveman = {
+      path = builtins.toPath "${caveman}";
+      subdir = "skills";
+    };
     skills.enableAll = [ "jbang-agent-skills" ];
     skills.explicit =
       awsExplicitSkills
@@ -137,6 +142,10 @@ in
         "security-audit" = {
           from = "cloudflare-security-audit-skill";
           path = "security-audit";
+        };
+        "caveman" = {
+          from = "caveman";
+          path = "caveman";
         };
       };
     targets.agents = {

@@ -48,6 +48,11 @@
       url = "github:cloudflare/security-audit-skill";
       flake = false;
     };
+
+    caveman = {
+      url = "github:JuliusBrussee/caveman";
+      flake = false;
+    };
   };
 
   outputs =
@@ -62,6 +67,7 @@
       jbang-agent-skills,
       softaworks-agent-toolkit,
       cloudflare-security-audit-skill,
+      caveman,
       ...
     }:
     let
@@ -78,6 +84,7 @@
           jbang-agent-skills
           softaworks-agent-toolkit
           cloudflare-security-audit-skill
+          caveman
           ;
       };
       homeManagerConfig = home-manager.lib.homeManagerConfiguration {

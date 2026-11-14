@@ -41,6 +41,9 @@ assert builtins.pathExists (config.sources.jbang-agent-skills.path + "/jbang-scr
 assert skills."gh-fix-ci".from == "openai";
 assert skills."quarkus-update".from == "quarkus";
 assert skills."security-audit".from == "cloudflare-security-audit-skill";
+assert skills.caveman.from == "caveman";
+assert skills.caveman.path == "caveman";
+assert builtins.pathExists (config.sources.caveman.path + "/skills/caveman/SKILL.md");
 assert builtins.pathExists (
   config.sources.cloudflare-security-audit-skill.path + "/skills/security-audit/SKILL.md"
 );
