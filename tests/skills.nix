@@ -44,6 +44,19 @@ assert skills."security-audit".from == "cloudflare-security-audit-skill";
 assert skills.caveman.from == "caveman";
 assert skills.caveman.path == "caveman";
 assert builtins.pathExists (config.sources.caveman.path + "/skills/caveman/SKILL.md");
+assert builtins.all
+  (
+    name:
+    skills.${name}.from == "caveman"
+    && skills.${name}.path == name
+    && builtins.pathExists (config.sources.caveman.path + "/skills/${name}/SKILL.md")
+  )
+  [
+    "investigate-first"
+    "surgical-patch"
+    "safe-refactor"
+    "verify-and-stop"
+  ];
 assert builtins.pathExists (
   config.sources.cloudflare-security-audit-skill.path + "/skills/security-audit/SKILL.md"
 );

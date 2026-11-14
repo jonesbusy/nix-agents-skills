@@ -147,6 +147,22 @@ in
           from = "caveman";
           path = "caveman";
         };
+        "investigate-first" = {
+          from = "caveman";
+          path = "investigate-first";
+        };
+        "surgical-patch" = {
+          from = "caveman";
+          path = "surgical-patch";
+        };
+        "safe-refactor" = {
+          from = "caveman";
+          path = "safe-refactor";
+        };
+        "verify-and-stop" = {
+          from = "caveman";
+          path = "verify-and-stop";
+        };
       };
     targets.agents = {
       enable = true;
