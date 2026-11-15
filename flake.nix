@@ -53,6 +53,11 @@
       url = "github:JuliusBrussee/caveman";
       flake = false;
     };
+
+    qmd = {
+      url = "github:tobi/qmd";
+      flake = false;
+    };
   };
 
   outputs =
@@ -68,6 +73,7 @@
       softaworks-agent-toolkit,
       cloudflare-security-audit-skill,
       caveman,
+      qmd,
       ...
     }:
     let
@@ -85,6 +91,7 @@
           softaworks-agent-toolkit
           cloudflare-security-audit-skill
           caveman
+          qmd
           ;
       };
       homeManagerConfig = home-manager.lib.homeManagerConfiguration {

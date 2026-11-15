@@ -9,6 +9,7 @@
   softaworks-agent-toolkit,
   cloudflare-security-audit-skill,
   caveman,
+  qmd,
 }:
 { ... }:
 let
@@ -109,6 +110,10 @@ in
       path = builtins.toPath "${caveman}";
       subdir = "skills";
     };
+    sources.qmd = {
+      path = builtins.toPath "${qmd}";
+      subdir = "skills";
+    };
     skills.enableAll = [ "jbang-agent-skills" ];
     skills.explicit =
       awsExplicitSkills
@@ -162,6 +167,10 @@ in
         "verify-and-stop" = {
           from = "caveman";
           path = "verify-and-stop";
+        };
+        "qmd" = {
+          from = "qmd";
+          path = "qmd";
         };
       };
     targets.agents = {

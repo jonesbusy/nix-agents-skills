@@ -153,6 +153,22 @@
         "type": "github"
       }
     },
+    "qmd": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1794746444,
+        "narHash": "sha256-OKyCkRMv13BfoOE4DDJT4CCiIS/b/fA94TrTNoSWFXM=",
+        "owner": "tobi",
+        "repo": "qmd",
+        "rev": "ee88c16d4dc4ac8e5a835ad775ec69e92fb20c23",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tobi",
+        "repo": "qmd",
+        "type": "github"
+      }
+    },
     "quarkus-skills": {
       "flake": false,
       "locked": {
@@ -180,6 +196,7 @@
         "jbang-agent-skills": "jbang-agent-skills",
         "nixpkgs": "nixpkgs",
         "openai-skills": "openai-skills",
+        "qmd": "qmd",
         "quarkus-skills": "quarkus-skills",
         "softaworks-agent-toolkit": "softaworks-agent-toolkit"
       }

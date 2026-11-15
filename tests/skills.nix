@@ -38,6 +38,9 @@ assert builtins.all (
 assert config.skills.enableAll == [ "jbang-agent-skills" ];
 assert builtins.pathExists (config.sources.jbang-agent-skills.path + "/jbang/SKILL.md");
 assert builtins.pathExists (config.sources.jbang-agent-skills.path + "/jbang-scripting/SKILL.md");
+assert skills.qmd.from == "qmd";
+assert skills.qmd.path == "qmd";
+assert builtins.pathExists (config.sources.qmd.path + "/skills/qmd/SKILL.md");
 assert skills."gh-fix-ci".from == "openai";
 assert skills."quarkus-update".from == "quarkus";
 assert skills."security-audit".from == "cloudflare-security-audit-skill";
