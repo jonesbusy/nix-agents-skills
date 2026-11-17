@@ -1,11 +1,15 @@
 ---
 name: obsidian-wiki
-description: Maintain the user's LLM Wiki in Obsidian using the vault's existing schema and Hermes-compatible conventions. Use when researching, creating, or updating synthesized wiki pages in the Obsidian vault; do not use for unrelated ordinary notes unless asked to integrate them.
+description: Maintain the user's LLM Wiki in Obsidian using the vault's existing schema and Hermes-compatible conventions. Use whenever asked to research, create, update, or record knowledge in the wiki—including requests to record, save, capture, or summarize a URL, link, article, issue, or other source. Review the linked source, find and update the right wiki page (or create one when warranted), cite it, and keep the index and log consistent. Do not use for unrelated ordinary notes unless asked to integrate them.
 ---
 
 # Obsidian LLM Wiki
 
-Maintain the LLM Wiki using the Obsidian tools and the vault's own `SCHEMA.md` as the source of truth. This skill is for Pi; keep it installed under Pi's skill directory, not the shared `~/.agents/skills` directory used by Hermes.
+Maintain the LLM Wiki using the Obsidian tools and the vault's own `SCHEMA.md` as the source of truth. This skill is shared through the user's agent-skills setup; follow the same wiki workflow regardless of which compatible agent loads it.
+
+## When asked to record a link or source
+
+Treat “record this link/source” as a request to capture its useful knowledge in the wiki, not merely paste the URL into a new note. Read or fetch the source, identify its main claims and relevance, search for an existing related wiki page, then either update that page or create a page only when the schema's page threshold is met. Cite the source near the claims it supports. If the source cannot be accessed, say so and avoid implying its contents were reviewed; ask whether the user wants a link-only bookmark if that is ambiguous.
 
 ## Before changing the wiki
 
